@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { enhance } from '$app/forms';
 	import logo from '$lib/images/svelte-logo.svg';
 </script>
 
@@ -20,6 +21,15 @@
 			</li>
 		</ul>
 	</nav>
+
+    {#if $page.data.user !== null}
+    <span>{$page.data.user.username}</span>
+	<form method="post" use:enhance>
+		<button>Sign out</button>
+	</form>
+    {:else}
+    <a href="/login/github">Sign in with GitHub</a>
+    {/if}
 </header>
 
 <style>

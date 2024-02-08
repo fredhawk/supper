@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
 </script>
 
 <svelte:head>
@@ -8,9 +7,6 @@
 </svelte:head>
 
 <section>
-	<form method="post" use:enhance>
-		<button>Sign out</button>
-	</form>
 </section>
 
 <style>
