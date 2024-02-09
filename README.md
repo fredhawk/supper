@@ -1,38 +1,51 @@
-# create-svelte
+# Love supper
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## Description
 
-## Creating a project
+A fun project to keep track of my recipes and share them with others. I learned a lot about Sveltekit and Drizzle along the way.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Installation
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Usage
 
-## Developing
+Provide instructions and examples for use. Include screenshots as needed.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-```bash
-npm run dev
+    ```md
+    ![alt text](assets/images/screenshot.png)
+    ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Credits
 
-## Building
+List your collaborators, if any, with links to their GitHub profiles.
 
-To create a production version of your app:
+If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
 
-```bash
-npm run build
-```
+If you followed tutorials, include links to those here as well.
 
-You can preview the production build with `npm run preview`.
+## License
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+MIT License
+
+---
+
+## Badges
+
+![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+
+Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+
+## Features
+
+If your project has a lot of features, list them here.
+
+## How to Contribute
+
+If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+
+## Tests
+
+Go the extra mile and write tests for your application. Then provide examples on how to run them here.
