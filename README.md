@@ -8,7 +8,71 @@ A fun project to keep track of my recipes and share them with others. I learned 
 
 What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
+1. Get an account with [Neon](https://neon.tech/)
+2. Set up a project and a database there. You will get a database URL out of it for your project.
+3. Set up a GitHub OAuth app with https://localhost/ as your homepage and https://localhost/login/github/callback as the callback url. You will get the Github client secret and ID to use in the project.
+4. Clone this repository to your local environment.
+5. Install the packages.
+
+```bash
+npm install
+```
+
+6. In the repository you will find a .env.example file. Copy it and/or rename it to .env and put in the database URL from Neon and the client and ID from GitHub.
+7. Now to generate the database schema and tables.
+
+```bash
+npm run db:generate && npm run db:push
+```
+
+8. To test out that run
+
+```bash
+npm run db:studio
+```
+
+or to view the frontend
+
+```bash
+npm run dev
+```
+
 ## Usage
+
+### To run development environment
+
+```bash
+npm run dev
+```
+### Build it
+
+```bash
+npm run build
+```
+
+### To run through the tests
+
+```bash
+npm run test
+```
+
+### Push database schema to Neon
+
+```bash
+npm run db:push
+```
+
+### View and interact with the database through GUI.
+
+```bash
+npm run db:studio
+```
+
+### Generate migrations.
+
+```bash
+npm run db:generate
+```
 
 Provide instructions and examples for use. Include screenshots as needed.
 
@@ -18,34 +82,14 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ![alt text](assets/images/screenshot.png)
     ```
 
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
 ## License
 
 MIT License
 
 ---
 
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
 ## Features
 
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+- [ ] Add your own recipes
+- [ ] Share them with unique links.
+- [ ] Favorite recipes to create your own list of love.
